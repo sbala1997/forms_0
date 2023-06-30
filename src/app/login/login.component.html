@@ -1,0 +1,17 @@
+<form class="card m-2 p-2" [formGroup]="loginForm">
+    <div>
+        <h1>Login</h1>
+    </div>
+    <div>
+      <label class="form-label">Email:</label>
+      <input class="form-control" formControlName="email" name="mail" type="email" id="email" />
+    </div>
+    <div>
+      <label class="form-label">PassWord:</label>
+      <input class="form-control" formControlName="password" name="word" type="password" id="password" />
+    </div>
+    <div>
+      <input class="btn btn-success my-3" (click)="onSubmit()" type="submit" value="Submit" />
+    </div>
+    <div> First Time User? <a routerLink="/register">Register</a></div>
+  </form>
