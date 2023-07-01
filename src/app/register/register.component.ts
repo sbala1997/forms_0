@@ -20,7 +20,10 @@ export class RegisterComponent {
 
   onSubmit(){
     this.auth.createUserWithEmailAndPassword(this.registerForm.value.email,this.registerForm.value.password)
-    .then((res=>console.log(res)))
+    .then(((res)=>{
+    console.log(res);
+    this.route.navigateByUrl('/dashboard');
+  }))
     .catch((err)=>{
       alert(err);
       this.route.navigateByUrl('/register');

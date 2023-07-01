@@ -11,13 +11,15 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { environment } from '../environments/environment';
 import { Auth } from '@angular/fire/auth';
+import { FpasswordComponent } from './fpassword/fpassword.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    FpasswordComponent
   ],
   imports: [
     BrowserModule,
